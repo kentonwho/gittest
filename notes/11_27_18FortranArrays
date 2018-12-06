@@ -1,0 +1,17 @@
+Fortran is column major! 
+Arrays go (j,i) instead of (i,j)
+So, for loops are "transposed"
+Declaring a static size array is simple, and follows declaration from a variable: 
+
+real, dimension(5,2) :: matrix 
+
+array multiplication is similar to Matlab, in that it is built-in: 
+arraynew = arrayold * 2 // is a valid command
+
+
+
+DYNAMIC ARRAYS 
+allocating a dynamic arrya means you have to declare the matrix as an allocatable array, then use 
+	
+	allocatate(x_1d(n), stat = ierror) 
+

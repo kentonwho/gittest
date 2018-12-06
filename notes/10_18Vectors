@@ -1,0 +1,29 @@
+October 18th, 2018: Vectors
+-----------------------------------------------
+You can instantiate an array with less entries than the number specified. In that case the entries are pushed to the beginning and the last entries are filled with zeros. 
+
+We can pass by reference to for ranged-based loops too - by using
+
+	for (int &e : array)
+
+When e is modified in the for loop, it will change globally - e will be accessible outside the for loop! 
+
+Vectors_________________________________________
+Vectors are another library that can be included
+Vectors an be instantiated many ways 
+	vector<type> myVector[size]{elements}; 
+	vector<type> myVector(size,single element); 
+
+Instead of accessing your vector using [], use the method at(). This will catch throw errors forout-of-bounds indexes (at the cost of slower compling) 
+
+	NO! myVector[5] = 0; 
+	Yes! myVector.at(5) = 0; 
+
+Other vector methods: 
+	.size()
+	.front()
+	.back() 
+	.push_back()
+
+Multidimentional Vectors: 
+You can have multidimensional vectors with vectors of vectors. 

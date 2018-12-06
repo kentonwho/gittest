@@ -1,0 +1,50 @@
+Fortran!
+
+Header always starts with
+program programname
+implicit none 
+
+MUST declare variables at the top - no other place to declare! 
+
+Ends with end program programname
+
+No semicolons - every line defines new line
+can concantenates line using ampersand (&) 
+
+Printing
+
+	print* , 'stuff', 4
+
+The second comma adds the 4 onto the line, but at the next tab column
+
+Variables
+
+All of these are variables: 
+real
+integer 
+
+Declare variables like so: 
+implicit none 
+integer :: i,n = 0
+real :: age
+
+i = 0
+age = 10.3 
+
+names also cannot include non-alphanumeric characters, other than _ 
+names must start with a letter 
+
+NOTE: if implicit none is not specified in a program
+variables with names that begin with the letters i - n are integers by default
+variables with names that begin with a-h or o-z are of type real by default
+
+Arithmetic Expressions -----------------------
+** - exponent 
+
+Kind/Length -------------------------------
+the size of types can be specified in Fortran: 
+
+integer[kind = 4] ::j
+kind specifies bytes
+len specifies length for strings 
+
